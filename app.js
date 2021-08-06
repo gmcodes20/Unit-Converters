@@ -16,6 +16,8 @@ const container = document.querySelector(".container"),
   noToConvert = document.getElementById("convert");
 let numb;
 
+noToConvert.value = 0;
+
 // Listen tp events
 noToConvert.addEventListener("keyup", convert);
 from.addEventListener("change", convert);
@@ -24,7 +26,9 @@ function convert() {
   const numbToConvert = parseInt(noToConvert.value),
     toV = to.value,
     fromV = from.value;
-
+  if (noToConvert.value === "") {
+    noToConvert.value = 0;
+  }
   if (to.value === from.value) {
     from.value = "celsuis";
     to.value = "fahrenheit";
