@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Remix Icon  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- SKELETON -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+      integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      p {
+        font-size: 1.5rem;
+      }
+      .blue {
+        font-weight: 600;
+
+        color: green;
+      }
+      .red {
+        font-weight: 600;
+
+        color: red;
+      }
+    </style>
+    <title>Units Converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Different Units Converter</h3>
+      <form>
+        <div class="container">
+          <div class="row">
+            <div class="six columns">
+              <label for="unit">Select Unit to convert</label>
+              <select class="u-full-width" id="unit">
+                <option value="temp">Temperature</option>
+                <option value="speed">Speed</option>
+                <option value="mass">Mass</option>
+                <option value="time">Time</option>
+                <option value="volume">Volume</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="three columns">
+              <label for="from">from</label>
+              <select class="u-full-width" id="from">
+                <option value="celsuis">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+              </select>
+            </div>
+            <div class="three columns">
+              <label for="to">To</label>
+              <select class="u-full-width" id="to">
+                <option value="celsuis">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="six columns">
+              <input
+                class="u-full-width convert"
+                type="number"
+                placeholder=" "
+                id="convert"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="six columns">
+              <p class="message">result</p>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
